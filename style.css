@@ -1,9 +1,10 @@
 body {
 	background-image: url('Screenshot 2023-05-02 at 10.28.01 AM.png');
-	background-size: cover;
-    height: 100vh;
-    width: 100vh;
+	background-size: contain;
+    height: 600px;
+    width: 600px;
     background-repeat: no-repeat;
+    margin-right: 50%;
 }
 
 header {
@@ -19,6 +20,8 @@ nav {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+    background-color: #198086;
+    font-size: 20px;
 }
 
 ul {
@@ -57,4 +60,18 @@ main {
     flex-direction: column;
     justify-content: center;
   }
-  
+
+.section {
+    color: #198086;
+    text-align: center;
+    margin-left: 50%;
+    width: 400px;
+}
+
+.section h2 {
+    font-size: 64px;
+}
+.section p {
+    font-size: 30px;
+}
+
