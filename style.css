@@ -1,34 +1,35 @@
 body {
 	background-image: url('Screenshot 2023-05-02 at 10.28.01 AM.png');
-	background-size: cover;
+	background-size: 75%;
+    background-position: center center;
     height: 100vh;
     margin: 0;
     background-repeat: no-repeat;
 }
 
+
 header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background-color: #333;
+    height: 65px;
+    
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+    align-items: center;
 	height: 100%;
     padding: 20px;
     background-color: #198086;
-    font-size: 40px;
+    font-size: 30px;
+    letter-spacing: 2px;
 }
 
 ul {
 	list-style: none;
 	padding: 0;
-	margin: 0;
-	display: flex;
+    margin-left: auto;
+    display: flex;
+
 }
 
 li {
@@ -44,14 +45,22 @@ a {
 	nav {
 		flex-direction: column;
 		align-items: flex-start;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 200px;
+		padding: 20px;
 	}
 	
-	header {
-		height: auto;
+	ul {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 20px;
 	}
-
+	
 	li {
-		padding: 5px;
+		padding: 10px 0;
 	}
 }
 
@@ -76,7 +85,11 @@ main {
 .section p {
     font-size: 30px;
 }
- #about p {
-    margin: 0 150px;
+#about p {
+margin: 0 150px;
 
- }
+}
+
+#home {
+    margin: 50px 0 0 0;
+}
