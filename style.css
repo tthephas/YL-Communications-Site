@@ -1,8 +1,8 @@
 body {
 	background-image: url('Screenshot 2023-05-02 at 10.28.01 AM.png');
 	background-size: cover;
-    height: 500px;
-    width: 500px;
+    height: 100vh;
+    margin: 0;
     background-repeat: no-repeat;
 }
 
@@ -10,16 +10,16 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100%;
-	width: 100px;
+	width: 100%;
 	background-color: #333;
 }
 
 nav {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 	height: 100%;
-    width: 200px;
+    padding: 20px;
     background-color: #198086;
     font-size: 40px;
 }
@@ -28,6 +28,7 @@ ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	display: flex;
 }
 
 li {
@@ -40,8 +41,13 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+	nav {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
 	header {
-		width: 50px;
+		height: auto;
 	}
 
 	li {
@@ -50,23 +56,19 @@ a {
 }
 
 main {
-    margin-left: 100px; /* change 100px to match the width of your menu bar */
     text-align: center;
   }
   
-  .section {
+.section {
+    color: #198086;
     height: 100vh; /* adjust to the height you want for each section */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
   }
-
-.section {
-    color: #198086;
-    text-align: center;
-    margin-left: 50%;
-    width: 400px;
-}
 
 .section h2 {
     font-size: 64px;
@@ -74,4 +76,7 @@ main {
 .section p {
     font-size: 30px;
 }
+ #about p {
+    margin: 0 150px;
 
+ }
