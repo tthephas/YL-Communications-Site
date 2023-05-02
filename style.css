@@ -1,10 +1,9 @@
 body {
 	background-image: url('Screenshot 2023-05-02 at 10.28.01 AM.png');
-	background-size: contain;
-    height: 600px;
-    width: 600px;
+	background-size: cover;
+    height: 500px;
+    width: 500px;
     background-repeat: no-repeat;
-    margin-right: 50%;
 }
 
 header {
@@ -20,8 +19,9 @@ nav {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+    width: 200px;
     background-color: #198086;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 ul {
