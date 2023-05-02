@@ -1,17 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:wght@400;700&display=swap');
-
-* {
-    box-sizing: border-box;
+body {
+	background-image: url('Screenshot 2023-05-02 at 10.28.01 AM.png');
+	background-size: cover;
+    height: 100vh;
+    width: 100vh;
+    background-repeat: no-repeat;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100px;
+	background-color: #333;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 10px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		width: 50px;
+	}
+
+	li {
+		padding: 5px;
+	}
+}
+
+main {
+    margin-left: 100px; /* change 100px to match the width of your menu bar */
+    text-align: center;
+  }
+  
+  .section {
+    height: 100vh; /* adjust to the height you want for each section */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
-
-}
+  }
+  
