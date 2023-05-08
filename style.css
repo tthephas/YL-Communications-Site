@@ -80,9 +80,11 @@ main {
 
 }
 #contact i {
+    display: inline-block;
     margin-right: 10px;
 }
 #email {
+    display: inline-block;
     color: #198086;
 }
 
